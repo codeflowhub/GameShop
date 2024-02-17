@@ -2,7 +2,7 @@ Hola, soy Matías, propietario de CodeFlowHub y diseñador de la plantilla GameS
 
 A continuación, te proporciono el código SQL para crear la base de datos de productos:
 
-```sql
+SQL
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
@@ -12,7 +12,6 @@ CREATE TABLE productos (
     descripcion TEXT,
     imagen VARCHAR(255) NOT NULL
 );
-```
 
 La tabla `productos` contiene información sobre los productos disponibles en la tienda, incluyendo su nombre, categoría, estado de oferta, precio, descripción y ruta de la imagen asociada.
 
