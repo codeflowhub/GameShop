@@ -1,0 +1,37 @@
+Hola, soy Matías dueño de codeflowhub, el diseñador de esta plantilla de GameShop utilizando HTML, CSS, JavaScript y PHP. Esta plantilla está diseñada para proporcionar una experiencia de compra intuitiva y atractiva para tus clientes. Puedes personalizar y modificar todos los aspectos de la tienda según tus necesidades.
+
+Aquí tienes el código SQL para crear la base de datos de productos:
+
+SQL:
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    categoria VARCHAR(255) NOT NULL,
+    oferta TINYINT NOT NULL DEFAULT 0,
+    precio DECIMAL(10, 2) NOT NULL,
+    descripcion TEXT,
+    imagen VARCHAR(255) NOT NULL
+);
+
+La tabla `productos` contiene información sobre los productos disponibles en la tienda, incluyendo su nombre, categoría, estado de oferta, precio, descripción y ruta de la imagen asociada.
+
+Para definir si un producto está o no en oferta, utiliza el siguiente criterio:
+
+- 0 = Sin oferta
+- 1 = En oferta
+
+Estos son los archivos incluidos en esta plantilla y su propósito:
+
+- `tienda.php`: Esta página proporciona la interfaz principal de la tienda donde los clientes pueden explorar y comprar productos. Está diseñada con HTML, CSS, JavaScript y PHP para garantizar una experiencia de usuario fluida.
+- `admin.php`: Esta página permite a los administradores agregar nuevos productos a la tienda. Utiliza HTML y CSS para proporcionar un formulario intuitivo. Ten en cuenta que el sistema de carga de imágenes está deshabilitado actualmente, por lo que deberás ajustarlo manualmente a través de phpMyAdmin.
+- `procesar_producto.php`: Este archivo PHP procesa los datos enviados desde el formulario en `admin.php` y realiza las consultas necesarias para agregar nuevos productos a la base de datos.
+- `conectar.php`: Este archivo PHP se encarga de establecer la conexión entre la plantilla (página) y la base de datos de phpMyAdmin, asegurando que la información de los productos se pueda recuperar y modificar correctamente.
+- `index.php`: Este archivo no se utiliza actualmente en la plantilla y solo contiene el código SQL para crear la base de datos de productos. Puedes eliminarlo si no lo necesitas.
+
+¡Espero que esta información sea útil para ti! Si tienes alguna pregunta adicional o necesitas más ayuda, no dudes en preguntar
+
+<!-- Whatsapp: +543493405555 -->
+<!-- Email: codeflowhub@outlook.com -->
+
+esto es una plantilla muy simple y no procesa los pagos
